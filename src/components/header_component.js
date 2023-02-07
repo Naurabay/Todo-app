@@ -1,7 +1,14 @@
 import React from "react";
+import './app-header.css';
 
-const HeaderComponent = () =>{
-    return (<h1>TODO app</h1>);
+const HeaderComponent = ({toDo, done}) => {
+    return (
+        <div className={"app-header d-flex"}>
+            <h1>Todo List</h1>
+            <h2>{toDo} more to do, {done} </h2>
+        </div>
+    );
+
 };
 
-export  default  HeaderComponent;
+export default HeaderComponent;

@@ -1,11 +1,12 @@
 import React from "react";
 
 const SearchComponent = () => {
-    const styleText = 'Searching...';
-    const styling = {fontfamily:'20px'};
     return (
-        <input  style={styling} placeholder = {styleText} disabled={true}/>
-        // placeholder='search'
+        <input type = "text"
+               className = {"form-control search-input"}
+               placeholder={"type to search"} />
     );
+
+
 };
 export default SearchComponent;
